@@ -11,9 +11,6 @@ before_script:
    - npm install -g --silent firebase-tools # installs firebase to run firebase deploy
    - npm install -g --silent @angular/cli
 
-script:
-   - ng build --prod
-
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN # firebase deploy after angular-cli build
 
