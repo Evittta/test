@@ -3,11 +3,10 @@ language: node_js
 node_js:
    - node
 
-branches:
-   only:
-      - master # will only build for master branch commits
+script:
+  - echo "Deploying!"
 
-before_script:
+install:
    - npm install -g --silent firebase-tools # installs firebase to run firebase deploy
    - npm install -g --silent @angular/cli
 
