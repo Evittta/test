@@ -11,7 +11,7 @@ install:
    - npm install -g --silent @angular/cli
 
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN # firebase deploy after angular-cli build
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive # firebase deploy after angular-cli build
 
 notifications:
   email:
