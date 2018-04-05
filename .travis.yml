@@ -12,7 +12,6 @@ before_script:
    - npm install -g --silent @angular/cli
 
 script:
-  - cd angular-tour-of-heroes
    - ng build --prod
 
 after_success:
